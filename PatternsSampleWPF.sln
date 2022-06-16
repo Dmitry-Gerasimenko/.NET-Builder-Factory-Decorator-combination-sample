@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B72124A9-34C6-4039-8FA0-7E948C87F84B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternsSampleWPF", "src\PatternsSampleWPF\PatternsSampleWPF.csproj", "{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35E3DFB9-B6C0-4960-8757-F8E3BB1F6681} = {B72124A9-34C6-4039-8FA0-7E948C87F84B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8CF0C20-01A4-4B5A-A3C9-61C3DD26C72D}
+	EndGlobalSection
+EndGlobal

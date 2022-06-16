@@ -1,0 +1,59 @@
+﻿<Window x:Class="PatternsSampleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatternsSampleWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        MinHeight="650" MinWidth="1050"
+        Height="650" Width="1100"
+        WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="ContentsGrid" Grid.Column="0" Background="#FF918490">
+            <TextBlock Text="View" VerticalAlignment="Top"  HorizontalAlignment="Center" FontSize="28" Margin="5"/>
+
+        </Grid>
+
+        <Grid Name="ControlGrid" Grid.Column="1" Background="#FF10103E">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="2" HorizontalAlignment="Left">
+                <TextBlock Text="Builder funcs:" FontSize="18" Foreground="White"/>
+
+                <Button Margin="30, 10, 0,0" Content="Build car body" Click="CarBodyBuild_Click"/>
+                <Button Margin="30, 10, 0,0" Content="Build wheels" Click="WheelsBuild_Click"/>
+                <Button Margin="30, 10, 0,0" Content="Build engine" Click="EngineBuild_Click"/>
+
+                <TextBlock Text="Factory funcs:" FontSize="18" Foreground="White" Margin="0, 30, 0,0"/>
+                <Button Margin="30, 10, 0,0" Content="Construct fully cheap car" Click="ConstructCheapCar_Click"/>
+                <Button Margin="30, 10, 0,0" Content="Construct luxury car" Click="ConstructLuxuryCar_Click"/>
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Margin="2" HorizontalAlignment="Left">
+                <TextBlock Text="Decorator:" FontSize="18" Foreground="White"/>
+
+                <Button Margin="30, 10, 0,0" Content="Add more lights" Click="AddLights_Click" />
+                <Button Margin="30, 10, 0,0" Content="Add spoiler" Click="AddSpoiler_Click"   />
+                <Button Margin="30, 10, 0,0" Content="Decorate wheels" Click="DecorateWheels_Click"/>
+            </StackPanel>
+
+            <Button Content="Clear" Grid.Row="2"
+                    VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="Clear_Click"/>
+
+            <Button Content="Close" FontSize="14" Grid.Row="2"
+                    VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="Close_click"/>
+        </Grid>
+    </Grid>
+</Window>
